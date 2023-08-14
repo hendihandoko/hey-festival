@@ -169,7 +169,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   display: block;
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 5%;
   bottom: 0;
   background: linear-gradient(
     0deg,
@@ -322,15 +322,52 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   /* mix-blend-mode: difference; */
 }
 
-.hero .content .cta {
-  margin-top: 1rem;
+.hero .cta {
+  margin-top: 490px;
+  margin-left: -450px;
   display: inline-block;
-  padding: 1rem 3rem; /* Atas bawah 1rem, kiri kanan 3 rem*/
-  font-size: 1.4rem;
-  color: #fff;
-  background-color: var(--primary);
-  border-radius: 0.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  padding: 1rem 15rem; /* Atas bawah 1rem, kiri kanan 3 rem*/
+  font-size: 35px;
+  box-sizing: border-box;
+  color: #050505;
+  background-color: pink;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  position: relative;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.hero .cta:hover {
+  color: #f39cff;
+}
+
+.hero .cta::before {
+  /*pseudoelement*/
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  left: -95%;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.hero .cta:hover:before {
+  left: 0;
+}
+
+.hero .cta .fa-arrow-right-long {
+  width: 50px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  margin-left: 50px;
 }
 
 /* Lineup Section */
