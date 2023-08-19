@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="animation-active">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,14 +16,17 @@
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- My Style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <!-- Font Awesome  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Navbar start -->
@@ -88,14 +91,53 @@
     <!-- Line Up Section Start -->
     <section id="lineup" class="lineup">
       <h1>LINEUP</h1>
-      <div class="container">
-        <div class="newjeans">
-          <img class="image" src="img/NewJeans.jpg" alt="New Jeans" />
-          <h2 href="#">NEW JEANS</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="newjeans">
+              <img class="image" src="img/newjeans.jpg" alt="New Jeans" />
+              <a href="#">NEW JEANS</a>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="iu">
+              <img class="image" src="img/iu.webp" alt="IU" />
+              <a href="#">IU</a>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="lesserafim">
+              <img class="image" src="img/lesserafim.jpg" alt="LE SSERAFIM" />
+              <a href="#">LE SSERAFIM</a>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="bts">
+              <img class="image" src="img/bts.jpg" alt="BTS" />
+              <a href="#">BTS</a>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="seventeen">
+              <img class="image" src="img/seventeen.jpg" alt="Seventeen" />
+              <a href="#">SEVENTEEN</a>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="ive">
+              <img class="image" src="img/ive.jpg" alt="Ive" />
+              <a href="#">IVE</a>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="gidle">
+              <img class="image" src="img/gidle.png" alt="Gidle" />
+              <a href="#">(G)-IDLE</a>
+            </div>
+          </div>
         </div>
-        <!-- <h2>LE SSERAFIM</h2>
-        <h2>IU</h2>
-        <h2>NMIXX</h2> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
     <!-- Line Up Section End -->
@@ -107,5 +149,9 @@
 
     <!-- My Javascript -->
     <script src="js/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>

@@ -164,20 +164,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   outline: none; /* Remove any outlines */
 }
 
-.hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 5%;
-  bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(170, 237, 255, 0.639) 8%,
-    rgba(76, 203, 253, 0) 50%
-  );
-}
-
 .hero .content {
   display: flex;
   padding: 1rem 7%;
@@ -386,17 +372,16 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   background-size: cover;
   background-position: center;
   position: relative;
-  border-style: solid;
-  border-color: green;
 }
 
 .lineup h1 {
   padding-top: 25px;
-  padding-left: 250px;
-  padding-right: 250px;
-  padding-bottom: 0;
+  padding-left: 35px;
+  padding-right: 150px;
+  padding-bottom: 100px;
   font-size: 4rem;
   margin-top: 50px;
+  margin-right: 860px;
   color: #000000;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 200;
@@ -406,28 +391,26 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   background-position: center;
 }
 
-.lineup .container {
+.lineup .newjeans {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  position: absolute;
-  margin-left: 0;
-  margin-top: 180px;
-  margin-right: 600px;
+  margin-left: 75px;
+  margin-right: 60px;
+  width: 300px;
 }
 
-.lineup .container .newjeans {
-  margin-left: 0;
-}
-
-.lineup .container .newjeans img {
+.lineup .newjeans img {
   height: 300px;
   width: 300px;
   margin-bottom: 0;
 }
 
-.lineup .container .newjeans h2 {
+.lineup .newjeans a {
   font-size: 3rem;
   margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   color: #000000;
@@ -439,7 +422,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   z-index: 9998;
 }
 
-.lineup .container .newjeans h2::after {
+.lineup .newjeans a::after {
   /*pseudoelement*/
   content: "";
   display: block;
@@ -448,13 +431,316 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   background-color: aqua;
   position: absolute;
   top: 0;
-  left: -95%;
+  left: -90%;
   transition: left 0.3s ease;
   z-index: -1;
 }
 
-.lineup .container .newjeans h2:hover:after {
+.lineup .newjeans a:hover:after {
   left: 0;
+}
+
+.lineup .iu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 130px;
+  width: 300px;
+}
+
+.lineup .iu img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.lineup .iu a {
+  height: 66.67px;
+  font-size: 3rem;
+  margin-top: 0;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+.lineup .iu a::after {
+  /*pseudoelement*/
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  left: -90%;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.lineup .iu a:hover:after {
+  left: 0;
+}
+
+.lineup .lesserafim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 180px;
+  width: 300px;
+}
+
+.lineup .lesserafim img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.lineup .lesserafim a {
+  font-size: 3rem;
+  margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+.lineup .lesserafim a::after {
+  /*pseudoelement*/
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  left: -90%;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.lineup .lesserafim a:hover:after {
+  left: 0;
+}
+
+.lineup .bts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 230px;
+  width: 300px;
+}
+
+.lineup .bts img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.lineup .bts a {
+  font-size: 3rem;
+  margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+.lineup .bts a::after {
+  /*pseudoelement*/
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  left: -90%;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.lineup .bts a:hover:after {
+  left: 0;
+}
+
+.lineup .seventeen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 280px;
+  width: 300px;
+}
+
+.lineup .seventeen img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.lineup .seventeen a {
+  font-size: 3rem;
+  margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+.lineup .seventeen a::after {
+  /*pseudoelement*/
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  left: -90%;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.lineup .seventeen a:hover:after {
+  left: 0;
+}
+
+.lineup .ive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 330px;
+  width: 300px;
+}
+
+.lineup .ive img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.lineup .ive a {
+  font-size: 3rem;
+  margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+.lineup .ive a::after {
+  /*pseudoelement*/
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  left: -90%;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.lineup .ive a:hover:after {
+  left: 0;
+}
+
+.lineup .gidle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 380px;
+  width: 300px;
+}
+
+.lineup .gidle img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.lineup .gidle a {
+  font-size: 3rem;
+  margin-top: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+.lineup .gidle a::after {
+  /*pseudoelement*/
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  left: -90%;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.lineup .gidle a:hover:after {
+  left: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 150px;
+  left: 5px;
+  right: 0;
+  margin-left: 0;
+}
+
+.swiper-slide {
+  width: 300px !important;
 }
 
 /* Media Queries */
