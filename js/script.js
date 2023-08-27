@@ -32,3 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//Daily Pass and 3 Day Pass Script
+const dailyPass = document.getElementById("dailyPass");
+const threeDayPass = document.getElementById("threeDayPass");
+
+dailyPass.addEventListener("click", () => {
+  dailyPass.classList.toggle("clicked");
+  threeDayPass.classList.toggle("clicked");
+});
+
+threeDayPass.addEventListener("click", () => {
+  threeDayPass.classList.toggle("clicked");
+  dailyPass.classList.toggle("clicked");
+});
