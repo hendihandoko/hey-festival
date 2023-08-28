@@ -36,13 +36,19 @@ document.addEventListener("DOMContentLoaded", () => {
 //Daily Pass and 3 Day Pass Script
 const dailyPass = document.getElementById("dailyPass");
 const threeDayPass = document.getElementById("threeDayPass");
+const dailyPassContent = document.getElementById("dailyPassContent");
+const threeDayPassContent = document.getElementById("threeDayPassContent");
 
 dailyPass.addEventListener("click", () => {
-  dailyPass.classList.toggle("clicked");
-  threeDayPass.classList.toggle("clicked");
+  dailyPass.classList.add("clicked");
+  threeDayPass.classList.remove("clicked");
+  dailyPassContent.style.display = "flex";
+  threeDayPassContent.style.display = "none";
 });
 
 threeDayPass.addEventListener("click", () => {
-  threeDayPass.classList.toggle("clicked");
-  dailyPass.classList.toggle("clicked");
+  threeDayPass.classList.add("clicked");
+  dailyPass.classList.remove("clicked");
+  dailyPassContent.style.display = "none";
+  threeDayPassContent.style.display = "flex";
 });

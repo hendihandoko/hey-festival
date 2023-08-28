@@ -875,7 +875,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 /* Ticket Section */
 .ticket {
-  min-height: 100vh;
+  min-height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -890,7 +890,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   padding-top: 20px;
   padding-left: 30rem;
   padding-right: 30rem;
-  padding-bottom: 100vh;
+  padding-bottom: 120vh;
   margin-bottom: 0;
   font-size: 4rem;
   margin-top: 100px;
@@ -936,7 +936,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .ticket .mybca .pass-headings h2.clicked {
   color: black;
   border-color: black;
-  /* Add any additional styling you want for the clicked state */
 }
 
 .ticket .mybca .mybca-content {
@@ -947,15 +946,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   padding-top: 10px;
   padding-left: 10rem;
   padding-right: 10rem;
-  border-radius: 20px;
   padding-bottom: 2rem;
   margin-top: 500px;
   position: absolute;
   z-index: 9000;
-  background-image: url("../img/navbar.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: cornsilk;
 }
 
 .ticket .mybca .mybca-content img {
@@ -987,18 +982,16 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   font-size: 35px;
   margin-top: 1rem;
   margin-bottom: 0;
-  border-radius: 50px;
   box-sizing: border-box;
   color: #050505;
-  background-color: aqua;
-  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  background-color: aquamarine;
   position: relative;
   overflow: hidden;
   z-index: 9998;
 }
 
 .ticket .mybca .mybca-content a:hover {
-  color: pink;
+  color: #f39cff;
 }
 
 .ticket .mybca .daily-pass-content {
@@ -1006,10 +999,22 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   justify-content: center;
   align-items: center;
   position: absolute;
-  position: absolute;
-  bottom: 27%;
-  z-index: 9001;
+  bottom: 25.5%;
+  z-index: 9002;
   margin-bottom: 0;
+  padding-left: 4rem;
+  animation: fadeInFromBottom 1s ease forwards;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .ticket .mybca .daily-pass-content h1 {
@@ -1017,12 +1022,281 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   justify-content: center;
   align-items: center;
   color: black;
-  background-color: aqua;
+  background-color: rgb(229, 255, 0);
+  height: 4rem;
+  width: 17rem;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+.ticket .mybca .daily-pass-content h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: cornsilk;
+  height: 8rem;
+  width: 17rem;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+.ticket .mybca .daily-pass-content h2 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: black;
+  display: block;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  width: auto;
+}
+
+.ticket .mybca .daily-pass-content img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 17rem;
+  margin-top: 0;
+}
+
+.ticket .mybca .daily-pass-content h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: cornsilk;
+  height: 4rem;
+  width: 17rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+}
+
+.ticket .mybca .daily-pass-content h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: cornsilk;
+  height: 8rem;
+  width: 17rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+.ticket .mybca .daily-pass-content h4 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  color: black;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.ticket .mybca .daily-pass-content a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: aquamarine;
+  height: 5rem;
+  width: 17rem;
+  font-size: 2rem;
+  margin-right: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.ticket .mybca .daily-pass-content a:hover {
+  background-color: #66b3b3;
+}
+
+.ticket .mybca .daily1,
+.ticket .mybca .daily2,
+.ticket .mybca .daily3 {
+  margin-right: 2rem; /* Add some bottom margin between daily1, daily2, daily3 */
+}
+.ticket .mybca .daily1 h1,
+.ticket .mybca .daily2 h1,
+.ticket .mybca .daily3 h1,
+.ticket .mybca .daily1 h2,
+.ticket .mybca .daily2 h2,
+.ticket .mybca .daily3 h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.ticket .mybca .threeday-pass-content {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25.5%;
+  z-index: 9001;
+  margin-bottom: 0;
+  padding-left: 4rem;
+  animation: fadeInFromBottom 1s ease forwards;
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ticket .mybca .threeday-pass-content h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: rgb(229, 255, 0);
   height: 4rem;
   width: 17rem;
   font-size: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-top: 0;
+}
+
+.ticket .mybca .threeday-pass-content h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: cornsilk;
+  height: 8rem;
+  width: 17rem;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+.ticket .mybca .threeday-pass-content h2 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: black;
+  display: block;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  width: auto;
+}
+
+.ticket .mybca .threeday-pass-content img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 17rem;
+  margin-top: 0;
+}
+
+.ticket .mybca .threeday-pass-content h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: cornsilk;
+  height: 4rem;
+  width: 17rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+}
+
+.ticket .mybca .threeday-pass-content h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: cornsilk;
+  height: 8rem;
+  width: 17rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+.ticket .mybca .threeday-pass-content h4 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  color: black;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.ticket .mybca .threeday-pass-content a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: aquamarine;
+  height: 5rem;
+  width: 17rem;
+  font-size: 2rem;
+  margin-right: 2rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.ticket .mybca .threeday-pass-content a:hover {
+  background-color: #66b3b3;
+}
+.ticket .mybca .threeday1,
+.ticket .mybca .threeday2,
+.ticket .mybca .threeday3 {
+  margin-right: 2rem; /* Add some bottom margin between daily1, daily2, daily3 */
+}
+.ticket .mybca .threeday1 h1,
+.ticket .mybca .threeday2 h1,
+.ticket .mybca .threeday3 h1,
+.ticket .mybca .threeday1 h2,
+.ticket .mybca .threeday2 h2,
+.ticket .mybca .threeday3 h2 {
+  margin: 0;
+  padding: 0;
 }
 
 /* Media Queries */
