@@ -751,7 +751,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 75%;
   position: absolute;
   top: 150px;
   left: 5px;
@@ -1435,18 +1435,16 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .news .news2 .card-body .card-text h3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical; /* Set the orientation to vertical */
-  -webkit-line-clamp: 2;
   font-size: 1.5rem;
-  width: 260px;
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  margin-top: 6rem;
-  margin-right: 0;
-  color: black;
+  line-height: 1.2; /* Adjust line height as needed */
+  max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+  margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .news .news3 img {
@@ -1498,18 +1496,16 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .news .news3 .card-body .card-text h3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical; /* Set the orientation to vertical */
-  -webkit-line-clamp: 2;
   font-size: 1.5rem;
-  width: 260px;
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  margin-top: 6rem;
-  margin-right: 3rem;
-  color: black;
+  line-height: 1.2; /* Adjust line height as needed */
+  max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+  margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .news .news4 img {
@@ -1561,18 +1557,16 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .news .news4 .card-body .card-text h3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical; /* Set the orientation to vertical */
-  -webkit-line-clamp: 2;
   font-size: 1.5rem;
-  width: 260px;
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  margin-top: 6rem;
-  margin-right: 3rem;
-  color: black;
+  line-height: 1.2; /* Adjust line height as needed */
+  max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+  margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .news .news5 img {
@@ -1625,18 +1619,16 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .news .news5 .card-body .card-text h3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical; /* Set the orientation to vertical */
-  -webkit-line-clamp: 2;
   font-size: 1.5rem;
-  width: 260px;
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  margin-top: 6rem;
-  margin-right: 3rem;
-  color: black;
+  line-height: 1.2; /* Adjust line height as needed */
+  max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+  margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .news .news6 img {
@@ -1671,21 +1663,16 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .news .news6 .card-body .card-title h2 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical; /* Set the orientation to vertical */
-  -webkit-line-clamp: 2;
-  justify-content: left;
-  align-items: center;
-  font-size: 2rem;
-  width: 300px;
-  overflow: hidden;
+  font-size: 1.5rem;
   font-family: "Manrope", sans-serif;
   color: black;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 2rem;
-  max-width: 85%;
-  position: absolute;
+  font-weight: 300;
+  line-height: 1.2; /* Adjust line height as needed */
+  max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+  margin-top: 6rem; /* Remove the large top margin */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .news .news6 .card-body .card-text h3 {
@@ -1753,18 +1740,41 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .news .news7 .card-body .card-text h3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical; /* Set the orientation to vertical */
-  -webkit-line-clamp: 2;
   font-size: 1.5rem;
-  width: 260px;
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  margin-top: 6rem;
-  margin-right: 3rem;
-  color: black;
+  line-height: 1.2; /* Adjust line height as needed */
+  max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+  margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  border: none; /* Remove any borders */
+  outline: none; /* Remove any outlines */
+  padding: 1.5rem 7%;
+  background-image: url("../img/navbar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.footer a {
+  font-family: "Manrope", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: large;
 }
 
 /* Media Queries */
