@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -231,8 +235,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   background-image: url("../img/city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: 10% 40%;
+
   font-family: "Bebas Neue", sans-serif;
   height: 180px;
   width: 350px;
@@ -281,8 +284,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   background-image: url("../img/city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: 10% 40%;
   font-family: "Bebas Neue", sans-serif;
   height: 280px;
   width: 300px;
@@ -875,7 +876,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 /* Ticket Section */
 .ticket {
-  min-height: 200vh;
+  min-height: 170vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -999,7 +1000,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 25.5%;
+  bottom: 12.5%;
   z-index: 9002;
   margin-bottom: 0;
   padding-left: 4rem;
@@ -1151,7 +1152,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 25.5%;
+  bottom: 12.5%;
   z-index: 9001;
   margin-bottom: 0;
   padding-left: 4rem;
@@ -1439,7 +1440,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  line-height: 1.2; /* Adjust line height as needed */
+  line-height: 2; /* Adjust line height as needed */
   max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
   margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
@@ -1500,7 +1501,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  line-height: 1.2; /* Adjust line height as needed */
+  line-height: 2; /* Adjust line height as needed */
   max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
   margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
@@ -1561,7 +1562,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  line-height: 1.2; /* Adjust line height as needed */
+  line-height: 2; /* Adjust line height as needed */
   max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
   margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
@@ -1623,7 +1624,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  line-height: 1.2; /* Adjust line height as needed */
+  line-height: 2; /* Adjust line height as needed */
   max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
   margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
@@ -1663,31 +1664,34 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .news .news6 .card-body .card-title h2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /* Set the orientation to vertical */
+  -webkit-line-clamp: 2;
+  justify-content: left;
+  align-items: center;
+  font-size: 2rem;
+  width: 300px;
+  overflow: hidden;
+  font-family: "Manrope", sans-serif;
+  color: black;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  max-width: 85%;
+  position: absolute;
+}
+
+.news .news6 .card-body .card-text h3 {
   font-size: 1.5rem;
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  line-height: 1.2; /* Adjust line height as needed */
+  line-height: 2; /* Adjust line height as needed */
   max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
   margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
   text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
   white-space: nowrap; /* Prevent text from wrapping */
-}
-
-.news .news6 .card-body .card-text h3 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical; /* Set the orientation to vertical */
-  -webkit-line-clamp: 2;
-  font-size: 1.5rem;
-  width: 260px;
-  font-family: "Manrope", sans-serif;
-  color: black;
-  font-weight: 300;
-  margin-top: 6rem;
-  margin-right: 3rem;
-  color: black;
-  overflow: hidden;
 }
 
 .news .news7 img {
@@ -1744,7 +1748,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 300;
-  line-height: 1.2; /* Adjust line height as needed */
+  line-height: 2; /* Adjust line height as needed */
   max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
   margin-top: 6rem; /* Remove the large top margin */
   overflow: hidden;
@@ -1774,7 +1778,89 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   font-family: "Manrope", sans-serif;
   color: black;
   font-weight: 600;
-  font-size: large;
+  font-size: small;
+}
+
+/* About US Section */
+.aboutus {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(aqua, rgb(253, 189, 253));
+  position: relative;
+}
+
+.aboutus .about-body {
+  padding: 1.5rem 5rem 5rem;
+  background-color: cornsilk;
+}
+
+.aboutus h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+}
+
+.aboutus .about-body p {
+  font-family: "Manrope", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  width: 90rem;
+}
+
+/* FAQ Section */
+.faq {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgb(253, 189, 253), pink);
+  position: relative;
+}
+
+.faq .faq-section {
+  padding: 1.5rem 5rem 5rem;
+}
+
+.faq h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+}
+
+.faq .faq-section h2 {
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq .faq-section p {
+  color: black;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: solid;
 }
 
 /* Media Queries */
