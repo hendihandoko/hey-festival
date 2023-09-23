@@ -93,6 +93,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   left: 0;
   right: 0;
   z-index: 9999;
+  width: 100%;
 }
 
 /* .navbar .navbar-logo {
@@ -183,6 +184,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 .hero .content .image {
   width: 60%;
+}
+
+.hero .content .container .half-container {
+  display: flex;
 }
 
 .hero .content .container .date-container {
@@ -276,8 +281,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .hero .content .content-month {
-  position: absolute;
-  left: 835px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1964,6 +1967,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   .hero {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
@@ -1972,6 +1976,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     position: relative;
     border: none; /* Remove any borders */
     outline: none; /* Remove any outlines */
+    padding-top: 10rem;
   }
 
   .hero .content {
@@ -1980,9 +1985,15 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     align-items: center;
     justify-content: center;
     padding: 7%;
-    max-width: 100%;
+    width: 100%;
     border: none; /* Remove any borders */
     outline: none; /* Remove any outlines */
+  }
+
+  .hero .content .image {
+    width: 100%;
+    height: 50%;
+    padding-top: 0;
   }
 
   .hero .content .container {
@@ -1990,13 +2001,19 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    width: 350px;
+    width: 100%;
   }
 
-  .hero .content .image {
-    height: 300px;
-    width: 350px;
-    padding-top: 0;
+  .hero .content .container .half-container {
+    display: flex;
+  }
+
+  .hero .content .date-city-container {
+    width: 50%;
+  }
+
+  .hero .content .month-container {
+    width: 50%;
   }
 
   .hero .content .container .date-container {
@@ -2009,7 +2026,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     background-size: cover;
     background-position: center;
     height: 50px;
-    width: 175px;
+    width: 100%;
   }
 
   .hero .content .container .date-container h1 {
@@ -2051,7 +2068,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     background-size: cover;
     font-family: "Bebas Neue", sans-serif;
     height: 50px;
-    width: 175px;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
   }
 
   .hero .content .container .city-container h1 {
@@ -2070,11 +2089,12 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 350px;
+    width: 100%;
     background-image: url("../img/place.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Bebas Neue", sans-serif;
+    text-align: center;
   }
 
   .hero .content .container .place-container h1 {
@@ -2083,15 +2103,13 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     justify-content: center;
     height: 5%;
     width: 650px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #000000;
     font-weight: 300;
   }
 
   .hero .content .content-month {
-    position: absolute;
-    top: 411px;
-    left: 195px;
+    position: static;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2100,7 +2118,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     background-size: cover;
     font-family: "Bebas Neue", sans-serif;
     height: 100px;
-    width: 175px;
+    width: 100%;
   }
 
   .hero .content .content-month h1 {
@@ -2122,24 +2140,29 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     /* mix-blend-mode: difference; */
   }
+  
+  .hero .button {
+    padding: 0% 7%;
+    width: 100%;
+  }
 
   .hero .cta {
-    margin-top: 500px;
+    position: relative;
+    margin: 0;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 300;
-    padding: 1.5rem 15rem; /* Atas bawah 1rem, kiri kanan 3 rem*/
+    padding: 1.5rem 3rem; /* Atas bawah 1rem, kiri kanan 3 rem*/
     font-size: 2.8rem;
     line-height: 1;
     box-sizing: border-box;
     color: #050505;
     background-color: pink;
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-    position: absolute;
-    left: 470px;
     overflow: hidden;
     z-index: 9998;
     height: 50px;
-    width: 350px;
+    width: 100%;
+    text-align: center;
   }
 
   .hero .cta:hover {
@@ -2175,5 +2198,1458 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     position: absolute;
     top: 12px;
     left: 120px;
+  }
+
+  .lineup {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-image: url("../img/header-bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .lineup h1 {
+    margin: 8rem 8rem 8rem 0rem;
+    font-size: 4rem;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-image: url("../img/navbar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .lineup .newjeans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .lineup .newjeans img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .lineup .newjeans a {
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    z-index: 9998;
+  }
+  
+  .lineup .newjeans a::after {
+    /*pseudoelement*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease;
+    z-index: -1;
+    cursor: pointer;
+  }
+  
+  .lineup .newjeans a:hover:after {
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .lineup .iu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh !important;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .lineup .iu img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .lineup .iu a {
+    height: auto;
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    z-index: 9998;
+  }
+  
+  .lineup .iu a::after {
+    /*pseudoelement*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease;
+    z-index: -1;
+    cursor: pointer;
+  }
+  
+  .lineup .iu a:hover:after {
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .lineup .lesserafim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .lineup .lesserafim img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .lineup .lesserafim a {
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    z-index: 9998;
+  }
+  
+  .lineup .lesserafim a::after {
+    /*pseudoelement*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  
+  .lineup .lesserafim a:hover:after {
+    left: 0;
+  }
+  
+  .lineup .bts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .lineup .bts img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .lineup .bts a {
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    z-index: 9998;
+  }
+  
+  .lineup .bts a::after {
+    /*pseudoelement*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  
+  .lineup .bts a:hover:after {
+    left: 0;
+  }
+  
+  .lineup .seventeen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .lineup .seventeen img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .lineup .seventeen a {
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    z-index: 9998;
+  }
+  
+  .lineup .seventeen a::after {
+    /*pseudoelement*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  
+  .lineup .seventeen a:hover:after {
+    left: 0;
+  }
+  
+  .lineup .ive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .lineup .ive img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .lineup .ive a {
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    z-index: 9998;
+  }
+  
+  .lineup .ive a::after {
+    /*pseudoelement*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  
+  .lineup .ive a:hover:after {
+    left: 0;
+  }
+  
+  .lineup .gidle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+  }
+  
+  .lineup .gidle img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .lineup .gidle a {
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    z-index: 9998;
+  }
+  
+  .lineup .gidle a::after {
+    /*pseudoelement*/
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  
+  .lineup .gidle a:hover:after {
+    left: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+  }
+  
+  .swiper-slide {
+    width: 320px;
+  }
+  
+  .swiper-slide::before {
+    content: ""; /* Required for the pseudo-element to appear */
+    position: absolute;
+    top: 0;
+    right: -10px; /* Adjust this value to control how much of the overflowing content triggers the pointer cursor */
+    width: 10px; /* Adjust this width to match the amount of overflow you want to trigger the cursor */
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    margin-left: 0;
+    padding: 3rem;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 3rem;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 99999; /* Make sure the modal is on top */
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 10% auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 100%;
+  }
+  
+  .modal-content .modal-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* Adjust the width as needed */
+    height: 200px;
+    padding: 0;
+    background-image: url("../img/header-bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .modal-content .modal-head .close-modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 25px;
+    height: 55px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .modal-content .modal-head img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    border: solid;
+    border-color: aqua;
+    border-width: 5px;
+  }
+  
+  .modal-content .modal-body {
+    display: flex;
+    flex-direction: column;
+    width: auto; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    overflow: auto; /* Enable scrollbars when content exceeds dimensions */
+    border: 1px solid #ccc;
+    background-image: url("../img/navbar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+  }
+  
+  .modal-content .modal-body h2 {
+    margin: 1rem;
+    font-family: "Manrope", "sans-serif";
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  
+  .modal-content .modal-body .date {
+    margin: 0 1rem;
+    font-family: "Manrope", "sans-serif";
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .modal-content .modal-body p {
+    padding-top: 5px;
+    margin: 1rem;
+    font-family: "Manrope", "sans-serif";
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .ticket {
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/header-bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .ticket .mybca {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem;
+    margin: 0;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: pink;
+  }
+  
+  .ticket .mybca h1 {
+    text-align: center;
+    font-size: 4rem;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+  }
+  
+  .ticket .mybca .pass-headings {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+    text-wrap: nowrap;
+  }
+  
+  .ticket .mybca .pass-headings h2 {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 0;
+    color: lightslategrey;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    border-style: solid;
+    border-color: lightslategrey;
+    padding: 0.25rem 5rem 0.25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+  
+  .ticket .mybca .pass-headings h2.clicked {
+    color: black;
+    border-color: black;
+  }
+  
+  .ticket .mybca .mybca-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;  
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 12rem;
+    position: absolute;
+    z-index: 9000;
+    background-color: cornsilk;
+    text-align: center;
+  }
+  
+  .ticket .mybca .mybca-content img {
+    margin: 2rem 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+  }
+  
+  .ticket .mybca .mybca-content h2 {
+    font-size: 4rem;
+    margin-bottom: 0.25rem;
+    color: black;
+    border-style: none;
+  }
+  
+  .ticket .mybca .mybca-content h3 {
+    font-size: 2rem;
+    color: black;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+  }
+  
+  .ticket .mybca .mybca-content a {
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    padding: 1rem 3rem; /* Atas bawah 1rem, kiri kanan 3 rem*/
+    font-size: 35px;
+    margin: 0;
+    box-sizing: border-box;
+    color: #050505;
+    background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
+    z-index: 9998;
+    width: 100%
+  }
+  
+  .ticket .mybca .mybca-content a:hover {
+    color: #f39cff;
+  }
+
+  .ticket .mybca .daily-pass-content {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    height: 100%;
+    position: absolute;
+    bottom: 12.5%;
+    margin-bottom: 0;
+    animation: fadeInFromBottom 1s ease forwards;
+    padding: 0;
+    z-index: 9002;
+    top: 50rem;
+    left: 0;
+  }
+  
+  @keyframes fadeInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .ticket .mybca .daily-pass-content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(229, 255, 0);
+    height: 4rem;
+    width: 17rem;
+    font-size: 2rem;
+  }
+  
+  .ticket .mybca .daily-pass-content h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: cornsilk;
+    height: 8rem;
+    width: 17rem;
+    font-size: 1.2rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+  }
+  
+  .ticket .mybca .daily-pass-content h2 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    color: black;
+    display: block;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    width: auto;
+  }
+  
+  .ticket .mybca .daily-pass-content img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17rem;
+  }
+  
+  .ticket .mybca .daily-pass-content h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: cornsilk;
+    height: 4rem;
+    width: 17rem;
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
+  
+  .ticket .mybca .daily-pass-content h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: cornsilk;
+    height: 8rem;
+    width: 17rem;
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+  }
+  
+  .ticket .mybca .daily-pass-content h4 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    color: black;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  
+  .ticket .mybca .daily-pass-content a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: aquamarine;
+    height: 5rem;
+    width: 17rem;
+    font-size: 2rem;
+    margin-right: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .ticket .mybca .daily-pass-content a:hover {
+    background-color: #66b3b3;
+  }
+  
+  .ticket .mybca .daily1,
+  .ticket .mybca .daily2,
+  .ticket .mybca .daily3 {
+    margin-right: 0;
+  }
+
+  .ticket .mybca .daily1 *,
+  .ticket .mybca .daily2 *,
+  .ticket .mybca .daily3 * {
+    margin-right: 0.5rem;
+    padding: 0;
+  }
+
+  .ticket .mybca .daily1 {
+    margin-left: 2rem;
+  }
+  
+  .ticket .mybca .threeday-pass-content {
+    display: none;
+    justify-content: center;
+    align-items: normal;
+    height: 100%;
+    position: absolute;
+    bottom: 12.5%;
+    margin-bottom: 0;
+    animation: fadeInFromBottom 1s ease forwards;
+    padding: 0;
+    z-index: 9002;
+    top: 50rem;
+    left: 0;
+  }
+  
+  @keyframes fadeInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .ticket .mybca .threeday-pass-content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(229, 255, 0);
+    height: 4rem;
+    width: 17rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0;
+  }
+  
+  .ticket .mybca .threeday-pass-content h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: cornsilk;
+    height: 8rem;
+    width: 17rem;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+  }
+  
+  .ticket .mybca .threeday-pass-content h2 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    color: black;
+    display: block;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    width: auto;
+  }
+  
+  .ticket .mybca .threeday-pass-content img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17rem;
+    margin-top: 0;
+  }
+  
+  .ticket .mybca .threeday-pass-content h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: cornsilk;
+    height: 4rem;
+    width: 17rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
+  
+  .ticket .mybca .threeday-pass-content h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: cornsilk;
+    height: 8rem;
+    width: 17rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+  }
+  
+  .ticket .mybca .threeday-pass-content h4 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    color: black;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  
+  .ticket .mybca .threeday-pass-content a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: aquamarine;
+    height: 5rem;
+    width: 17rem;
+    font-size: 2rem;
+    margin-right: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .ticket .mybca .threeday-pass-content a:hover {
+    background-color: #66b3b3;
+  }
+  .ticket .mybca .threeday1,
+  .ticket .mybca .threeday2,
+  .ticket .mybca .threeday3 {
+    margin: 0; /* Add some bottom margin between daily1, daily2, daily3 */
+  }
+  .ticket .mybca .threeday1 h1,
+  .ticket .mybca .threeday2 h1,
+  .ticket .mybca .threeday3 h1,
+  .ticket .mybca .threeday1 h2,
+  .ticket .mybca .threeday2 h2,
+  .ticket .mybca .threeday3 h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .news {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgb(210, 201, 255), aqua);
+    position: relative;
+  }
+  
+  .news h1 {
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+    font-size: 4rem;
+    margin-top: 50px;
+    margin-right: 860px;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    background-color: cornsilk;
+  }
+  
+  .news .swiper-slide {
+    display: flex;
+    justify-content: inline;
+  }
+  
+  .news .news1 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 0.7rem;
+  }
+  
+  .news .news1 .card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 30vh;
+    overflow: hidden;
+    padding: 20px;
+    background-color: cornsilk;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .news .news1 .card-body .card-title h2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    width: inherit;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    position: static;
+  }
+  
+  .news .news1 .card-body .card-text h3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.5rem;
+    width: inherit;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: black;
+    position: static;
+  }
+  
+  .news .news2 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 0.7rem;
+  }
+  
+  .news .news2 .card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 30vh;
+    overflow: hidden;
+    padding: 20px;
+    background-color: cornsilk;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .news .news2 .card-body .card-title h2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    width: inherit;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    position: static;
+  }
+  
+  .news .news2 .card-body .card-text h3 {
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 300;
+    line-height: 2; /* Adjust line height as needed */
+    max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+    margin-top: 0; /* Remove the large top margin */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+    width: inherit;
+    position: static;
+  }
+  
+  .news .news3 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 0.7rem;
+  }
+  
+  .news .news3 .card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 30vh;
+    overflow: hidden;
+    padding: 20px;
+    background-color: cornsilk;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .news .news3 .card-body .card-title h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical; /* Set the orientation to vertical */
+    -webkit-line-clamp: 2;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    width: 300px;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 85%;
+    position: absolute;
+  }
+  
+  .news .news3 .card-body .card-text h3 {
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 300;
+    line-height: 2; /* Adjust line height as needed */
+    max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+    margin-top: 6rem; /* Remove the large top margin */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .news .news4 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 0.7rem;
+  }
+  
+  .news .news4 .card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 30vh;
+    overflow: hidden;
+    padding: 20px;
+    background-color: cornsilk;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .news .news4 .card-body .card-title h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical; /* Set the orientation to vertical */
+    -webkit-line-clamp: 2;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    width: 300px;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 85%;
+    position: absolute;
+  }
+  
+  .news .news4 .card-body .card-text h3 {
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 300;
+    line-height: 2; /* Adjust line height as needed */
+    max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+    margin-top: 6rem; /* Remove the large top margin */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .news .news5 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 0.7rem;
+  }
+  
+  .news .news5 .card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 30vh;
+    overflow: hidden;
+    padding: 20px;
+    background-color: cornsilk;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .news .news5 .card-body .card-title h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical; /* Set the orientation to vertical */
+    -webkit-line-clamp: 2;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    width: 300px;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 85%;
+    position: absolute;
+  }
+  
+  .news .news5 .card-body .card-text h3 {
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 300;
+    line-height: 2; /* Adjust line height as needed */
+    max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+    margin-top: 6rem; /* Remove the large top margin */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .news .news6 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 0.7rem;
+  }
+  
+  .news .news6 .card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 30vh;
+    overflow: hidden;
+    padding: 20px;
+    background-color: cornsilk;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .news .news6 .card-body .card-title h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical; /* Set the orientation to vertical */
+    -webkit-line-clamp: 2;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    width: 300px;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 85%;
+    position: absolute;
+  }
+  
+  .news .news6 .card-body .card-text h3 {
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 300;
+    line-height: 2; /* Adjust line height as needed */
+    max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+    margin-top: 6rem; /* Remove the large top margin */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .news .news7 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 30vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 0.7rem;
+  }
+  
+  .news .news7 .card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    width: 30vh;
+    overflow: hidden;
+    padding: 20px;
+    background-color: cornsilk;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .news .news7 .card-body .card-title h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical; /* Set the orientation to vertical */
+    -webkit-line-clamp: 2;
+    justify-content: left;
+    align-items: center;
+    font-size: 2rem;
+    width: 300px;
+    overflow: hidden;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    max-width: 85%;
+    position: absolute;
+  }
+  
+  .news .news7 .card-body .card-text h3 {
+    font-size: 1.5rem;
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 300;
+    line-height: 2; /* Adjust line height as needed */
+    max-height: 3.6rem; /* 1.5rem multiplied by 2 lines plus some spacing */
+    margin-top: 6rem; /* Remove the large top margin */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+
+  .aboutus {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(aqua, rgb(253, 189, 253));
+    position: relative;
+  }
+  
+  .aboutus .about-body {
+    padding: 1.5rem 5rem 5rem;
+    background-color: cornsilk;
+  }
+  
+  .aboutus h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+  }
+  
+  .aboutus .about-body p {
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    width: inherit;
+  }
+
+  .faq {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgb(253, 189, 253), pink);
+    position: relative;
+  }
+  
+  .faq .faq-section {
+    padding: 1.5rem 5rem 5rem;
+  }
+  
+  .faq h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+  }
+  
+  .faq .faq-section h2 {
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq .faq-section p {
+    color: black;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: solid;
   }
 }

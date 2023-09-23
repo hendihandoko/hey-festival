@@ -34,12 +34,12 @@
       <!-- <a href="#" class="navbar-logo">kenangan<span>senja</span>.</a> -->
 
       <div class="navbar-nav">
-        <a href="#home">HOME</a>
-        <a href="#lineup">LINEUP</a>
-        <a href="#ticket">TICKET</a>
-        <a href="#news">NEWS</a>
-        <a href="#aboutus">ABOUT US</a>
-        <a href="#faq">FAQ</a>
+        <a id="menu" href="#home">HOME</a>
+        <a id="menu" href="#lineup">LINEUP</a>
+        <a id="menu" href="#ticket">TICKET</a>
+        <a id="menu" href="#news">NEWS</a>
+        <a id="menu" href="#aboutus">ABOUT US</a>
+        <a id="menu" href="#faq">FAQ</a>
       </div>
 
       <!-- <div class="navbar-extra">
@@ -61,28 +61,36 @@
       <main class="content">
         <img class="image" src="img/hey.jpg" alt="Hey Images" />
         <div class="container">
-          <div class="date-container">
-            <h1>11</h1>
-            <div class="divider"></div>
-            <h1>12</h1>
-            <div class="divider"></div>
-            <h1>13</h1>
-          </div>
-          <div class="city-container">
-            <h1>TANGERANG, INDONESIA</h1>
+          <div class="half-container">
+            <div class="date-city-container">
+              <div class="date-container">
+                <h1>11</h1>
+                <div class="divider"></div>
+                <h1>12</h1>
+                <div class="divider"></div>
+                <h1>13</h1>
+              </div>
+              <div class="city-container">
+                <h1>TANGERANG, INDONESIA</h1>
+              </div>
+            </div>
+            <div class="month-container">
+              <div class="content-month">
+                <h1>JULY<br />2023</h1>
+              </div>
+            </div>
           </div>
           <div class="place-container">
             <h1>Indonesia Convention Exhibition (ICE BSD)</h1>
           </div>
         </div>
-        <div class="content-month">
-          <h1>JULY<br />2023</h1>
-        </div>
       </main>
-      <a href="#ticket" class="cta"
-        >Buy Ticket
-        <i class="fa-solid fa-arrow-right-long"></i>
-      </a>
+      <div class="button">
+        <a href="#ticket" class="cta">
+          Buy Ticket
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
     </section>
     <!-- Hero Section End -->
 
@@ -157,6 +165,65 @@
             <i class="fa-solid fa-arrow-right-long"></i>
           </a>
         </div>
+
+        <div id="dailyPassContentSwipe" class="swiper ticketSwiper daily-pass-content">
+          <div class="swiper-wrapper">
+            <div class="card swiper-slide daily1">
+              <h1>Daily Pass</h1>
+              <h2>PRESALE<span>EARLY BIRD</span></h2>
+              <img class="image" src="img/ticket.png" alt="ticket" />
+              <h3>START FROM</h3>
+              <h4>IDR<span>550K</span></h4>
+              <a href="#mybca" class="mybca-ticket">Buy Ticket </a>
+            </div>
+            <div class="card swiper-slide daily2">
+              <h1>Daily Pass</h1>
+              <h2>PRESALE<span>GENERAL SALES</span></h2>
+              <img class="image" src="img/ticket.png" alt="ticket" />
+              <h3>START FROM</h3>
+              <h4>IDR<span>750K</span></h4>
+              <a href="#mybca" class="mybca-ticket">Buy Ticket </a>
+            </div>
+            <div class="card swiper-slide daily3">
+              <h1>Daily Pass</h1>
+              <h2>PRESALE<span>VIP</span></h2>
+              <img class="image" src="img/ticket.png" alt="ticket" />
+              <h3>START FROM</h3>
+              <h4>IDR<span>1.400K</span></h4>
+              <a href="#mybca" class="mybca-ticket">Buy Ticket </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="threeDayPassContentSwipe" class="swiper ticketSwiper threeday-pass-content">
+          <div class="swiper-wrapper">
+            <div class="card swiper-slide threeday1">
+              <h1>3 Day Pass</h1>
+              <h2>PRESALE<span>EARLY BIRD</span></h2>
+              <img class="image" src="img/ticket.png" alt="ticket" />
+              <h3>START FROM</h3>
+              <h4>IDR<span>900K</span></h4>
+              <a href="#mybca" class="mybca-ticket">Buy Ticket </a>
+            </div>
+            <div class="card swiper-slide threeday2">
+              <h1>3 Day Pass</h1>
+              <h2>PRESALE<span>GENERAL SALES</span></h2>
+              <img class="image" src="img/ticket.png" alt="ticket" />
+              <h3>START FROM</h3>
+              <h4>IDR<span>1.800K</span></h4>
+              <a href="#mybca" class="mybca-ticket">Buy Ticket </a>
+            </div>
+            <div class="card swiper-slide threeday3">
+              <h1>3 Day Pass</h1>
+              <h2>PRESALE<span>VIP</span></h2>
+              <img class="image" src="img/ticket.png" alt="ticket" />
+              <h3>START FROM</h3>
+              <h4>IDR<span>2.900K</span></h4>
+              <a href="#mybca" class="mybca-ticket">Buy Ticket </a>
+            </div>
+          </div>
+        </div>
+        
         <div id="dailyPassContent" class="daily-pass-content">
           <div class="daily1">
             <h1>Daily Pass</h1>

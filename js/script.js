@@ -26,10 +26,15 @@ document.addEventListener("click", function (e) {
   }
 });
 
+const menu = document.querySelector("#menu").onclick = () => {
+  navbarNav.classList.remove("active");
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const openModalDivs = document.querySelectorAll(".open-modal-link"); // Update this selector
   const closeModalButtons = document.querySelectorAll(".close-modal-btn");
   const modals = document.querySelectorAll(".modal");
+  const body = document.querySelector("body");
 
   openModalDivs.forEach((div) => {
     // Change variable name to openModalDivs
@@ -38,6 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const modalId = div.getAttribute("data-modal");
       const modal = document.getElementById(modalId);
       modal.style.display = "block";
+    
+      body.style.overflow = "hidden";
     });
   });
 
@@ -45,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       const modal = button.closest(".modal");
       modal.style.display = "none";
+      body.style.overflow = "visible";
     });
   });
 
@@ -52,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modals.forEach((modal) => {
       if (event.target === modal) {
         modal.style.display = "none";
+        body.style.overflow = "visible";
       }
     });
   });
@@ -62,17 +71,47 @@ const dailyPass = document.getElementById("dailyPass");
 const threeDayPass = document.getElementById("threeDayPass");
 const dailyPassContent = document.getElementById("dailyPassContent");
 const threeDayPassContent = document.getElementById("threeDayPassContent");
+const dailyPassContentSwipe = document.getElementById("dailyPassContentSwipe");
+const threeDayPassContentSwipe = document.getElementById("threeDayPassContentSwipe");
 
-dailyPass.addEventListener("click", () => {
-  dailyPass.classList.add("clicked");
-  threeDayPass.classList.remove("clicked");
-  dailyPassContent.style.display = "flex";
-  threeDayPassContent.style.display = "none";
-});
+if (window.screen.width > 450) {
+  document.addEventListener("DOMContentLoaded", () => {
+    dailyPassContentSwipe.style.display = "none";
+    threeDayPassContentSwipe.style.display = "none";
+  });
 
-threeDayPass.addEventListener("click", () => {
-  threeDayPass.classList.add("clicked");
-  dailyPass.classList.remove("clicked");
-  dailyPassContent.style.display = "none";
-  threeDayPassContent.style.display = "flex";
-});
+  dailyPass.addEventListener("click", () => {
+    dailyPass.classList.add("clicked");
+    threeDayPass.classList.remove("clicked");
+    dailyPassContent.style.display = "flex";
+    threeDayPassContent.style.display = "none";
+  });
+  
+  threeDayPass.addEventListener("click", () => {
+    threeDayPass.classList.add("clicked");
+    dailyPass.classList.remove("clicked");
+    dailyPassContent.style.display = "none";
+    threeDayPassContent.style.display = "flex";
+  });
+} else {
+  document.addEventListener("DOMContentLoaded", () => {
+    dailyPassContent.style.display = "none";
+    threeDayPassContent.style.display = "none";
+  });
+
+  dailyPass.addEventListener("click", () => {
+    dailyPass.classList.add("clicked");
+    threeDayPass.classList.remove("clicked");
+    dailyPassContentSwipe.style.display = "flex";
+    threeDayPassContentSwipe.style.display = "none";
+  });
+  
+  threeDayPass.addEventListener("click", () => {
+    threeDayPass.classList.add("clicked");
+    dailyPass.classList.remove("clicked");
+    dailyPassContentSwipe.style.display = "none";
+    threeDayPassContentSwipe.style.display = "flex";
+  });
+}
+
+
