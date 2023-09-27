@@ -2229,7 +2229,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -2282,7 +2282,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh !important;
+    width: 20vh !important;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -2336,7 +2336,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -2387,7 +2387,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -2438,7 +2438,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -2489,7 +2489,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -2540,7 +2540,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     position: relative;
     z-index: 999;
     cursor: pointer;
@@ -2633,13 +2633,11 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   .modal-content {
     display: flex;
     flex-direction: column;
-    max-width: 60%;
-    margin: 10% auto;
-    padding: 20px;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 0 2rem;
     position: relative;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    height: 100%;
+    height: 80%;
   }
   
   .modal-content .modal-head {
@@ -2657,7 +2655,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   
   .modal-content .modal-head .close-modal-btn {
     position: absolute;
-    top: 15px;
+    top: 0;
     right: 30px;
     width: 25px;
     height: 55px;
@@ -2669,7 +2667,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 200px;
     height: auto;
     border: solid;
     border-color: aqua;
@@ -3173,7 +3171,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     object-fit: cover;
     position: relative;
     z-index: 999;
@@ -3187,7 +3185,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     overflow: hidden;
     padding: 20px;
     background-color: cornsilk;
@@ -3231,7 +3229,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     object-fit: cover;
     position: relative;
     z-index: 999;
@@ -3245,7 +3243,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     overflow: hidden;
     padding: 20px;
     background-color: cornsilk;
@@ -3287,7 +3285,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     object-fit: cover;
     position: relative;
     z-index: 999;
@@ -3301,7 +3299,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     overflow: hidden;
     padding: 20px;
     background-color: cornsilk;
@@ -3345,7 +3343,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     object-fit: cover;
     position: relative;
     z-index: 999;
@@ -3359,7 +3357,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     overflow: hidden;
     padding: 20px;
     background-color: cornsilk;
@@ -3403,7 +3401,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     object-fit: cover;
     position: relative;
     z-index: 999;
@@ -3417,7 +3415,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     overflow: hidden;
     padding: 20px;
     background-color: cornsilk;
@@ -3461,7 +3459,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     object-fit: cover;
     position: relative;
     z-index: 999;
@@ -3475,7 +3473,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     overflow: hidden;
     padding: 20px;
     background-color: cornsilk;
@@ -3519,7 +3517,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     flex-direction: column;
     justify-content: center;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     object-fit: cover;
     position: relative;
     z-index: 999;
@@ -3533,7 +3531,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     margin: 0 1rem;
-    width: 30vh;
+    width: 20vh;
     overflow: hidden;
     padding: 20px;
     background-color: cornsilk;
